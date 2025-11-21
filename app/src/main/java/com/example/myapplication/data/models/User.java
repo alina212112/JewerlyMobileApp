@@ -9,13 +9,11 @@ public class User {
     private String phone;
     private String created_at;
 
-    // Для входа
     public User(String email, String password) {
         this.email = email;
         this.password = password;
     }
 
-    // Для регистрации
     public User(String name, String login, String phone, String email, String password) {
         this.name = name;
         this.login = login;
@@ -24,7 +22,6 @@ public class User {
         this.password = password;
     }
 
-    // Для Retrofit (нужен пустой)
     public User() {}
 
     public Integer getId() { return id; }

@@ -54,8 +54,6 @@ public class Product {
         this.image_url = image_url;
     }
 
-    // ==================== GETTERS & SETTERS ====================
-
     public int getId() {
         return id;
     }

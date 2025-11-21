@@ -38,7 +38,6 @@ public class AuthRepository {
         this.callback = cb;
     }
 
-    // ===== LOGIN =====
     public void login(String email, String password) {
 
         api.getUserByEmail("eq." + email, "*").enqueue(new Callback<List<User>>() {
@@ -111,7 +110,7 @@ public class AuthRepository {
         });
     }
 
-    // ===== UTILS =====
+
     public void logout() {
         prefsHelper.clearUserSession();
     }
