@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JewelryShop</string>
+
+    <!-- Auth -->
+    <string name="login_title">Вход в аккаунт</string>
+    <string name="register_title">Регистрация</string>
+    <string name="login">Вход</string>
+    <string name="register">Регистрация</string>
+    <string name="password">Пароль</string>
+    <string name="password_8_chars">Пароль (минимум 8 символов)</string>
+    <string name="confirm_password">Подтвердите пароль</string>
+    <string name="full_name">Полное имя</string>
+    <string name="no_account">Нет аккаунта? Зарегистрируйтесь</string>
+    <string name="back_to_login">Вернуться на вход</string>
+
+    <!-- Navigation -->
+    <string name="home">Главная</string>
+    <string name="cart">Корзина</string>
+    <string name="profile">Профиль</string>
+
+    <!-- Home -->
+    <string name="search_hint">Поиск товаров...</string>
+
+    <!-- Cart -->
+    <string name="empty_cart">Корзина пуста</string>
+    <string name="total_price">Итого: ₽0.00</string>
+    <string name="checkout">Оформить заказ</string>
+
+    <!-- Product Detail -->
+    <string name="add_to_cart">Добавить в корзину</string>
+    <string name="close">Закрыть</string>
+
+    <!-- Profile -->
+    <string name="logout">Выход из аккаунта</string>
+    <string name="name_not_specified">Имя: Не указано</string>
+    <string name="email_not_specified">Email: Не указан</string>
+</resources>

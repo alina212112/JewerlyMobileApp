@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/bg_card"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/cartImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Cart Item Image" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/cartName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название товара"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cartPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₽0.00"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/minusBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="-"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/quantityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="center"
+                android:paddingHorizontal="10dp" />
+
+            <Button
+                android:id="@+id/plusBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="❌" />
+</LinearLayout>
