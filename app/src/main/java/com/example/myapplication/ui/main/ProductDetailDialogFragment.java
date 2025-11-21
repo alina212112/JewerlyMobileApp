@@ -43,18 +43,15 @@ public class ProductDetailDialogFragment extends DialogFragment {
         name.setText(product.getName());
         price.setText("₽" + String.format("%.2f", product.getPrice()));
         description.setText(product.getDescription());
-        // ✅ ИСПРАВЛЕННЫЙ: используем getType(), getMaterial(), getProbaInfo()
         details.setText("Тип: " + product.getType() + "\nМатериал: " + product.getMaterial() +
                 "\nПроба: " + product.getProbaInfo() + "\nСтатус: " + product.getStatus());
 
-        // ✅ ИСПРАВЛЕННЫЙ: используем getImage_url()
         Glide.with(requireContext())
                 .load(product.getImage_url())
                 .placeholder(R.drawable.ic_placeholder)
                 .into(imageView);
 
         addToCart.setOnClickListener(b -> {
-            // ✅ ИСПРАВЛЕННЫЙ: используем getId() (возвращает int, конвертируем в String)
             CartItem cartItem = new CartItem(String.valueOf(product.getId()), product.getName(),
                     product.getPrice(), 1, product.getImage_url());
             cartRepository.addToCart(cartItem);

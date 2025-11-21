@@ -23,7 +23,6 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
         authRepository = new AuthRepository(getContext());
 
-        // ✅ ВСЕ findViewById с правильными ID
         userEmailText = view.findViewById(R.id.userEmailText);
         userNameText = view.findViewById(R.id.userNameText);
         userPhoneText = view.findViewById(R.id.userPhoneText);
