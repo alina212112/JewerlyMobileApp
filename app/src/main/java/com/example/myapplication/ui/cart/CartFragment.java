@@ -72,6 +72,10 @@ public class CartFragment extends Fragment {
         }
     }
 
+
+
+
+
     @Override
     public void onResume() {
         super.onResume();
