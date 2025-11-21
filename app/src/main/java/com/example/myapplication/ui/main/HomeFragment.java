@@ -62,6 +62,11 @@ public class HomeFragment extends Fragment implements ProductRepository.ProductC
         dialog.show(getChildFragmentManager(), "ProductDetail");
     }
 
+
+
+
+
+
     @Override
     public void onProductsLoaded(List<Product> products) {
         if (productAdapter != null) {
