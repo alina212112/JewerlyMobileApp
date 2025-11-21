@@ -36,6 +36,9 @@ public class HomeFragment extends Fragment implements ProductRepository.ProductC
         return view;
     }
 
+
+
+
     private void setupRecycler(List<Product> products) {
         productAdapter = new ProductAdapter(products, product -> showProductDetails(product));
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
